@@ -1263,7 +1263,6 @@ generate_and_set_ssl_for_panels() {
 		done
 		if [ $SUCCESS -ne 1 ]; then
 		    echo "Failed to generate SSL certificate after $MAX_RETRIES attempts. OpenAdmin fallback to using HTTP protocol."
-		    exit 1
 		fi
 	fi
     fi
